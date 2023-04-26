@@ -74,8 +74,17 @@ class _TaskPageState extends State<TaskPage> {
                     Button(label:"+add Task",onTap:()=>null)
                     ],
                   ),
-                ],),
+                  SizedBox(height: 25,)
+                   DatePicker(
+                    DateTime.now(),
+                    initialSelectedDate: this._selectedDate,
+                    selectionColor: Color.fromARGB(255, 123, 0, 245),
+                    onDateChange: this._onDateChange,
+                  )
+                ],
+                ),
         ),
+        
         
       ),
     );
