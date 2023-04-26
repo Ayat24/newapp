@@ -1,6 +1,7 @@
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter/material.dart';
+import 'package:newapp/Add/button.dart';
 import 'package:newapp/page/Add/button.dart';
 
 class TaskPage extends StatefulWidget {
@@ -97,9 +98,17 @@ class _TaskPageState extends State<TaskPage> {
                       fontWeight: FontWeight.w500,
                     ),
                   ),
-
+  SingleChildScrollView(
+                    scrollDirection: Axis.vertical,
+                    child: Column(children: [
+                    
+                    
+                    
+                      ],),
+  )
+                ],
         
-        
+                ],  
       ),
     );
   }
