@@ -70,7 +70,22 @@ class _TaskPageState extends State<TaskPage> {
                           fontWeight: FontWeight.w500,
                         ),
                       ),
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const AddNewTask()));
+                        },
+                        child: Container(
+                          padding: EdgeInsets.all(15),
+                          decoration: BoxDecoration(
+                            color: Color.fromARGB(255, 123, 0, 245),
+                            borderRadius: BorderRadius.circular(10),
+                          ),
                       
+                        ),
+                      )
                     ],
                   ),
         ),
