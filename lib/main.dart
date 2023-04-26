@@ -16,7 +16,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.purple,
       ),
-      home: TaskPage(Goback: Goback),
+      home: TaskPage(
+        Goback: (p0) => null,
+      ),
     );
   }
 }
