@@ -59,11 +59,22 @@ class _TaskPageState extends State<TaskPage> {
                     ],
                   ),
                   SizedBox(height: 25),
-                ],
-              ),
-            ),
-          ],
+                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                     Text(
+                                "Apr,3 ",
+                                style:TextStyle(
+                          color: Colors.black,
+                          fontSize: 25,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                      
+                    ],
+                  ),
         ),
+        
       ),
     );
   }
