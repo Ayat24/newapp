@@ -1,10 +1,12 @@
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter/material.dart';
-import 'package:newapp/Add/button.dart';
+import 'package:newapp/Add/item.dart';
 import 'package:newapp/page/Add/button.dart';
 
 class TaskPage extends StatefulWidget {
+
+  
   const TaskPage({
     Key? key,
     required this.Goback,
@@ -101,14 +103,21 @@ class _TaskPageState extends State<TaskPage> {
   SingleChildScrollView(
                     scrollDirection: Axis.vertical,
                     child: Column(children: [
-                    
-                    
-                    
-                      ],),
-  )
+                      Item(
+                          ProjectName: "Project", CompletedPercent: 30),
+                      Item(
+                          ProjectName: "Project", CompletedPercent: 30),
+                      Item(
+                          ProjectName: "Project", CompletedPercent: 30),
+                      Item(
+                          ProjectName: "Project", CompletedPercent: 30),
+                      ]),
+                  )
                 ],
-        
-                ],  
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
