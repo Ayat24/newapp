@@ -83,7 +83,21 @@ class _TaskPageState extends State<TaskPage> {
                   )
                 ],
                 ),
-        ),
+                 ),
+                  Container(
+              padding: EdgeInsets.all(25),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "Task",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 20,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+
         
         
       ),
