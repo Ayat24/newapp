@@ -1,6 +1,7 @@
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter/material.dart';
+import 'package:newapp/page/Add/button.dart';
 
 class TaskPage extends StatefulWidget {
   const TaskPage({
@@ -70,24 +71,10 @@ class _TaskPageState extends State<TaskPage> {
                           fontWeight: FontWeight.w500,
                         ),
                       ),
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const AddNewTask()));
-                        },
-                        child: Container(
-                          padding: EdgeInsets.all(15),
-                          decoration: BoxDecoration(
-                            color: Color.fromARGB(255, 123, 0, 245),
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                      
-                        ),
-                      )
+                    Button(label:"+add Task",onTap:()=>null)
                     ],
                   ),
+                ],),
         ),
         
       ),
